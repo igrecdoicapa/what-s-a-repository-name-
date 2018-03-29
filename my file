@@ -1,0 +1,10 @@
+var1 = raw_input("Cuvant:")
+if len(var1) < 7 and len(var1) > 3:
+  print var1[0:3] + "qwe" + var1[3:6]
+else:
+  var2 = var1[0:3] + var1[3:6] #6
+  var3 = var1[0:3] + "qwe" + var1[3:6]
+  while len(var2) < len (var1):
+    var3 += "qwe"+ var1[len(var2):len(var2)+3]
+    var2 = var2 + var1[len(var2):len(var2)+3]
+    print var3
